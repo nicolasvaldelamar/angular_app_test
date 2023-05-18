@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registrarse</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registrate</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-col class="form-login">
+    <ion-input
+      class="name"
+      name="name"
+      type="text"
+      fill="solid"
+      label="Nombre Completo"
+      labelPlacement="floating"
+      helperText="Ingresa tu nombre"
+      ngModel
+      name
+    ></ion-input>
+    <ion-input
+      class="email"
+      name="email"
+      type="email"
+      fill="solid"
+      label="Email"
+      labelPlacement="floating"
+      helperText="Ingresa un correo valido"
+      errorText="Correo invalido"
+      ngModel
+      email
+    ></ion-input>
+    <ion-input
+      class="password"
+      name="password"
+      type="password"
+      fill="solid"
+      label="Contraseña"
+      labelPlacement="floating"
+      helperText="Ingresa una contraseña"
+      errorText="Contraseña invalida"
+      ngModel
+      password
+    ></ion-input>
+    <ion-button expand="block" color="primary" class="login-button">
+      Registrarse
+    </ion-button>
+    <ion-text class="text-button-login">
+      <span>¿Ya tienes cuenta?</span>
+      <a href="/login">Inicia sesion</a>
+    </ion-text>
+  </ion-col>
+</ion-content>
